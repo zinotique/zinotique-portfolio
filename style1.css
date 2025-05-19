@@ -73,3 +73,26 @@ max-width: 90%;
 height: auto;
 }
 
+@media screen and (max-width:768px){
+.logo{width:100px;}
+.icon{width:32px;margin-left:10px;}
+.main-header{flex-direction:column;gap:10px;padding:20px;}
+.menu-area{height:auto;margin-top:100px;}
+.menu-list{display:flex;flex-direction:column;gap:20px;padding:0;margin:0;}
+.menu-list li{font-size:32px;}
+.about-section{flex-direction:column;height:auto;padding:100px 20px;text-align:center;}
+.about-img{max-width:100%;}
+.works-section{padding-top:100px;gap:40px;}
+.work-row{gap:20px;}
+.work-card{width:90vw;height:auto;}
+.work-card img{height:auto;}
+.work-info{font-size:14px;}
+.work-card:hover .work-info{font-size:16px;}
+.possible-section{padding:80px 20px;gap:30px;}
+.title{font-size:36px;}
+.image-container{width:90%;}
+.image-container:hover{transform:none;}
+.declaration-section{padding:100px 20px 60px;gap:30px;}
+.main-title{font-size:20px;letter-spacing:1px;}
+.declaration-text{font-size:14px;line-height:1.8;padding:0 10px;}
+}
