@@ -12,7 +12,7 @@ body{background-color:black;color:white;font-family:sans-serif;}
 .works-section{display:flex;flex-direction:column;align-items:center;gap:60px;padding-top:150px;}
 .work-row{display:flex;gap:40px;flex-wrap:wrap;justify-content:center;}
 .work-card{position:relative;width:300px;height:400px;overflow:hidden;border-radius:10px;cursor:pointer;}
-.work-card.large{height:500px;} /* 커진 카드 사이즈 */
+.work-card.large{height:500px;}
 .work-card img{width:100%;height:100%;object-fit:cover;transition:0.3s ease;display:block;}
 .work-card:hover img{opacity:0.2;}
 .work-info{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;font-size:16px;font-weight:bold;opacity:0;transition:0.3s ease;color:white;}
@@ -20,8 +20,9 @@ body{background-color:black;color:white;font-family:sans-serif;}
 #original-image{display:none;margin-top:-20px;}
 </style>
 <script>
-function showOriginal() {
-  document.getElementById("original-image").style.display = "block";
+function toggleOriginal(){
+let el=document.getElementById("original-image");
+el.style.display=el.style.display==="block"?"none":"block";
 }
 </script>
 </head>
@@ -29,36 +30,29 @@ function showOriginal() {
 <div class="header">
 <a href="index.html"><img src="ss logo.png" alt="Logo" class="header-logo"></a>
 </div>
-
 <section class="works-section">
 <div class="work-row">
-    <div class="work-card" onclick="window.open('trapstarlondon_cardnews.png')">
-    <img src="trapstarlondon_cardnews.png" alt="Trapstar London Card News">
-    <div class="work-info">INSTAGRAM CARD NEWS DESIGN</div>
-    </div>
-
-    <div class="work-card" onclick="window.open('introduce.jpg')">
-    <img src="introduce.jpg" alt="Business Card">
-    <div class="work-info">KIM JIN HO BUSINESS CARD</div>
-    </div>
-
-    <div class="work-card" onclick="window.open('aloecream.png')">
-    <img src="aloecream.png" alt="Aloe Vera Soothing Cream Design">
-    <div class="work-info">ALOE VERA SOOTHING CREAM</div>
-    </div>
-
-    <div class="work-card large" onclick="showOriginal()">
-    <img src="blogskinwork.png" alt="LINE-UP Men's Hair Blog Skin">
-    <div class="work-info">LINE-UP HAIR BLOG SKIN REDESIGN</div>
-    </div>
+<div class="work-card" onclick="window.open('trapstarlondon_cardnews.png')">
+<img src="trapstarlondon_cardnews.png" alt="Trapstar London Card News">
+<div class="work-info">INSTAGRAM CARD NEWS DESIGN</div>
 </div>
-
-<!-- 원본 이미지 표시 영역 -->
+<div class="work-card" onclick="window.open('introduce.jpg')">
+<img src="introduce.jpg" alt="Business Card">
+<div class="work-info">KIM JIN HO BUSINESS CARD</div>
+</div>
+<div class="work-card" onclick="window.open('aloecream.png')">
+<img src="aloecream.png" alt="Aloe Vera Soothing Cream Design">
+<div class="work-info">ALOE VERA SOOTHING CREAM</div>
+</div>
+<div class="work-card large" onclick="toggleOriginal()">
+<img src="blogskinwork.png" alt="LINE-UP Men's Hair Blog Skin">
+<div class="work-info">LINE-UP HAIR BLOG SKIN REDESIGN</div>
+</div>
+</div>
 <div class="work-card" id="original-image">
-    <img src="blogskinog.png" alt="LINE-UP Hair Blog Skin Original Design">
-    <div class="work-info">LINE-UP BLOG SKIN ORIGINAL</div>
+<img src="blogskinog.png" alt="LINE-UP Hair Blog Skin Original Design">
+<div class="work-info">LINE-UP BLOG SKIN ORIGINAL</div>
 </div>
 </section>
-
 </body>
 </html>
