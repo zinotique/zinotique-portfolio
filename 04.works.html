@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WORKS - 김진호</title>
 <link rel="stylesheet" href="style1.css">
 <style>
@@ -16,6 +17,15 @@ body{background-color:black;color:white;font-family:sans-serif;}
 .work-card:hover img{opacity:0.2;}
 .work-info{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;font-size:16px;font-weight:bold;opacity:0;transition:0.3s ease;color:white;}
 .work-card:hover .work-info{opacity:1;font-size:22px;}
+@media screen and (max-width:768px){
+.header-logo{height:80px;}
+.works-section{padding-top:100px;gap:40px;}
+.work-row{gap:20px;}
+.work-card{width:90vw;height:auto;}
+.work-card img{height:auto;}
+.work-info{font-size:14px;}
+.work-card:hover .work-info{font-size:16px;}
+}
 </style>
 <script>
 function openLineupImages(){
@@ -26,6 +36,7 @@ w.document.write("<img src='blogskinog.png' alt='LINE-UP Original'><a class='zoo
 w.document.write("</body></html>");
 }
 </script>
+</head>
 <body>
 <div class="header">
 <a href="index.html"><img src="ss logo.png" alt="Logo" class="header-logo"></a>

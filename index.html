@@ -20,6 +20,20 @@ color:#888;
 border-top:1px solid rgba(255,255,255,0.1);
 margin-top:60px;
 }
+.main-header{display:flex;justify-content:space-between;align-items:center;padding:20px;}
+.logo-area .logo{height:60px;}
+.icon-area{display:flex;gap:10px;}
+.icon{height:30px;width:30px;}
+.menu-area{margin-top:40px;}
+.menu-list{display:flex;gap:40px;justify-content:center;list-style:none;padding:0;margin:0;}
+.menu-list li a{color:white;text-decoration:none;font-size:20px;font-weight:bold;}
+@media screen and (max-width:768px){
+.main-header{flex-direction:column;gap:10px;}
+.logo-area .logo{height:48px;}
+.icon-area{gap:15px;}
+.menu-list{flex-direction:column;align-items:center;gap:20px;}
+.menu-list li a{font-size:18px;}
+}
 </style>
 </head>
 <body>
