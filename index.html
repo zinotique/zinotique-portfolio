@@ -3,9 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
 <title>Document</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -14,7 +11,7 @@ body{background-color:black;color:white;font-family:sans-serif;}
 .logo{height:60px;}
 .icon-area{display:flex;gap:15px;}
 .icon{height:30px;width:30px;}
-.menu-area{display:flex;justify-content:center;align-items:center;height:100vh;}
+.menu-area{padding-top:200px;padding-bottom:60px;display:flex;justify-content:center;}
 .menu-list{display:flex;gap:40px;list-style:none;padding:0;margin:0;}
 .menu-list li a{color:white;text-decoration:none;font-size:100px;font-weight:700;transition:opacity 0.3s;}
 .menu-list li a:hover{opacity:0.6;}
@@ -22,7 +19,7 @@ body{background-color:black;color:white;font-family:sans-serif;}
 @media screen and (max-width:768px){
 .main-header{flex-direction:column;gap:10px;padding:20px;}
 .logo{height:48px;}
-.menu-area{height:auto;margin-top:100px;padding-bottom:60px;}
+.menu-area{padding-top:140px;padding-bottom:60px;}
 .menu-list{flex-direction:column;align-items:center;gap:20px;}
 .menu-list li a{font-size:32px;}
 }
